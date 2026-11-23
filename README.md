@@ -1,2 +1,1 @@
-# Rep-ModelingGroupProject
-A travel guide website on the USA made for our Representation and Modelling Module group project.
+The Texas part of our project. Embedded video not included 
