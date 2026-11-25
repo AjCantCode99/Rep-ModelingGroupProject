@@ -1,0 +1,231 @@
+body {
+  background-color: #F4E9D8 ;
+}
+h1 {
+  color: #A3412D;
+  font-family: verdana;
+  text-align: center;
+  border-radius: 1000px;
+  box-shadow: 0 4px 6px rgba(163, 65, 45, 0.9);
+}
+p {
+	color: #A3412D;
+  font-family: verdana;
+  text-align: center;
+}
+header {
+    width: 100%;
+}
+
+.headerContent { /*aligns the image and paragraph*/
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.introText {
+	flex: 1;
+	color: #A3412D;
+	font-family: verdana;
+}
+
+.headerImage {
+	width: 50%;
+	height: auto;
+	border: 3px solid #A3412D; /*gives the image a border*/
+}
+h2 {
+  color: #A3412D;
+  font-size: 1.5em;
+  font-family: verdana;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+h3 {
+  color: #A3412D;
+  font-size: 1.5em;
+  font-family: verdana;
+  text-align: center;
+}
+article{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+video {
+	width: 50%;
+	height: auto;
+	border: 3px solid #A3412D;
+}
+.beachText {
+	flex: 1;
+	color: #A3412D;
+	font-family: verdana;
+}
+
+.disneyText {
+	flex: 1;
+	color: #A3412D;
+	font-family: verdana;
+}
+.disneyPic {
+	width: 45%;
+	height: auto;
+	border: 3px solid #A3412D;
+}
+.gatorText {
+	flex: 1;
+	color: #A3412D;
+	font-family: verdana;
+}
+.gatorPic {
+	width: 50%;
+	height: auto;
+	border: 3px solid #A3412D;
+}
+.sound-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sound-list li {
+    background: #F4E9D8;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    border: 2px solid #A3412D;
+}
+
+.sound-list h3 {
+    margin: 0 0 10px 0;
+    color: #A3412D;
+}
+
+.sound-list audio {
+    width: 100%;
+}
+.attraction {
+    background-color: #F4E9D8;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px auto;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(163, 65, 45, 0.9);
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    position: fixed;
+    left: -180px;
+    transition: left 0.3s ease;
+    background-color: orange;
+}
+
+#menu.open {
+    left: 0;
+}
+
+#menu li:hover {
+    background-color: rgb(189, 127, 13);
+}
+
+#menu li a {
+    display: flex;
+    margin-left: 15px;
+    padding: 10px 18px;
+    align-items: center;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.container {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: left 0.3s ease;
+}
+
+.container.change {
+    left: 190px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+.otherPlaces {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+.otherText {
+    flex: 1;
+}
+.scrollWheel{
+  flex: 0 0 35%; 
+  max-height: 400px;    
+  overflow-y: auto;  
+
+    border: 3px solid #A3412D;
+    border-radius: 10px;
+
+    padding: 10px;
+    background-color:  #F4E9D8;
+}
+
+
+.scrollWheel img {
+  display: block;
+  width: 100%;
+  height:300px;
+   object-fit: cover;
+  margin-bottom: 5px;
+}
+ table, th, td {
+	width: 80%;
+	color: #A3412D;
+    border: 3px solid #A3412D; 
+	font-family: verdana;
+    border-collapse: no-collapse;    
+  }
+ .otherPlaces {
+    background-color: #F4E9D8;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px auto;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(163, 65, 45, 0.9);
+}
+footer{
+	background-color: #F4E9D8;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+    border-top:3px solid #A3412D;
+}
