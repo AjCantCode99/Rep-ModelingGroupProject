@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> <!--sets the characters-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--adjusts the layout for screen size-->
+
+    <title>Florida</title>
+
+    <link rel="stylesheet" href="FinalFloridaCSS - Copy.css">
+</head>
+
+<body id="top">
+
+    <header> <!--The header portion of the page with an image and blurb-->
+
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <ul id="menu">
+            <li><a>Home</a></li>
+            <li><a>New York</a></li>
+            <li><a>Hawaii</a></li>
+            <li><a>Texas</a></li>
+            <li><a>Other</a></li>
+        </ul>
+
+        <h1>Florida Travel Guide</h1>
+
+        <div class="headerContent"> <!--used div to help with css-->
+
+            <div class="introText">
+                <h2>Intro to Florida</h2>
+
+                <p>
+                    Florida, also known as the 'Sunshine State' is one of America's most
+                    coastal locations, with no point more than 60 miles from the sea.
+                    That means there's no shortage of fun water activity to enjoy!
+                    But that's not all, Florida is home to various other attractions
+                    with museums, landmarks and one of the most diverse ecosystems in
+                    the states. Whether you want to enjoy the warm waves, marvel at
+                    the wildlife or take in the scenery, Florida is the place for you!
+                </p>
+            </div>
+
+            <img src="floridaScape.jpg" alt="headerImage" class="headerImage">
+
+        </div>
+
+    </header>
+
+    <section class="attraction">
+
+        <h2>Main Attractions</h2>
+
+        <article>
+
+            <video width="100%" height="auto" controls autoplay muted loop>
+                <source src="miamiBeach.mp4" type="video/mp4">
+            </video>
+
+            <div class="beachText">
+                <h2>Miami Beach</h2>
+
+                <p>
+                    Miami Beach is actually its own municipality connected to mainland
+                    Miami by bridges. It holds the largest collection of Art Deco
+                    buildings, with over 800 across the city. There are several beaches
+                    scattered all over, with one for each of your wants. There are
+                    beaches with resorts, ones for nightlife and of course the classic
+                    quiet and relaxing locations.
+                </p>
+            </div>
+
+        </article>
+
+        <article>
+
+            <div class="disneyText">
+                <h2>Walt Disney World Resort</h2>
+
+                <p>
+                    Better known as Disney World, this world famous theme park has
+                    something for everyone. Four theme parks, two water parks and
+                    29,000 hotel rooms all themed after iconic Disney media all come
+                    together to make an unforgettable experience for anybody to enjoy.
+                    Each year the roster of characters and locations only grows, so
+                    now is the perfect time to visit!
+                </p>
+            </div>
+
+            <img src="disneyLand.jpg" alt="disneylandImage" class="disneyPic">
+
+        </article>
+
+        <article>
+
+            <img src="gatorland.jpg" alt="gatorlandImage" class="gatorPic">
+
+            <div class="gatorText">
+                <h2>Gatorland</h2>
+
+                <p>
+                    Gatorland is a 110 acre theme and wildlife park situated in the
+                    south of Florida. It's known as the "Alligator Capital" of America
+                    due to the sheer amount of alligators and crocodiles you can find.
+                    This park is perfect for spotting some of Florida's natural
+                    inhabitants for any nature lovers. It has also been the backdrop
+                    for many films such as a 1984 Indiana Jones flick.
+                </p>
+            </div>
+
+        </article>
+
+    </section>
+
+    <section>
+
+        <h2>Sounds of Florida</h2>
+
+        <p>
+            Across Florida, there are plenty of sights and Sounds that will leave you
+            speechless. Since we've seen some of said sights, here are some of the
+            best audial delights that the Sunshine State can offer you.
+        </p>
+
+        <ul class="sound-list">
+
+            <li>
+                <h3>Ocean Waves</h3>
+
+                <audio controls>
+                    <source src="Oceanwaves.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+
+            <li>
+                <h3>Tree Frogs</h3>
+
+                <audio controls>
+                    <source src="frogs.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+
+            <li>
+                <h3>Inland Birds</h3>
+
+                <audio controls>
+                    <source src="landBirds.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+
+            <li>
+                <h3>Tropical Birds</h3>
+
+                <audio controls>
+                    <source src="tropicalBirds.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+
+        </ul>
+
+    </section>
+
+    <section class="otherPlaces">
+
+        <div class="otherText">
+
+            <h2>Other Major Attractions</h2>
+
+            <table style="margin-left:auto; margin-right:auto;">
+
+                <tr>
+                    <th>Location</th>
+                    <th>Target Audience</th>
+                </tr>
+
+                <tr>
+                    <td>Universal Orlando</td>
+                    <td>Thrill Seekers</td>
+                </tr>
+
+                <tr>
+                    <td>Sea World</td>
+                    <td>Animal Lovers</td>
+                </tr>
+
+                <tr>
+                    <td>Lego Land</td>
+                    <td>Families</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="scrollWheel">
+            <img src="universal.jpg" alt="Universal">
+            <img src="seaworld.jpg" alt="Sea World">
+            <img src="legoLand.jpg" alt="Lego Land">
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h2>Florida Travel Guide</h2>
+
+        <p>
+            Explore Florida's beaches, wildlife, attractions, and culture.
+        </p>
+
+        <p>
+            <a href="#top">Back to Top</a> |
+            <a href="https://www.visitflorida.com/" target="_blank" rel="noopener noreferrer">
+                Official Florida Tourism
+            </a>
+        </p>
+
+        <p>
+            2026 Florida Travel Guide. Educational Project.
+        </p>
+
+    </footer>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+            document.getElementById("menu").classList.toggle("open");
+        }
+    </script>
+
+</body>
+
+</html>
