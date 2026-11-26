@@ -1,0 +1,58 @@
+body {
+  background-color: #F4E9D8;
+  font-size:200%;
+}
+
+h1 {
+  color: #A3412D;
+  text-align: center;
+  border radius: 90px;
+}
+  header { 
+
+    background: #F4E9D8; 
+
+    color: #000000; 
+
+    padding: 2rem; 
+
+    text-align: Center; 
+	font-size:200%;
+	border-radius: 16px; 
+
+    box-shadow: 0 4px 6px rgba(163, 65, 45, 0.9); 
+
+  } 
+
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between image and text */
+}
+.container img {
+  width: 150px;
+}
+.container p {
+  flex: 1;
+  font-size:100%;
+}
+
+  .videocontainer {
+    display: flex; /* arranges children in a row */
+    justify-content: space-between; /* pushes text left, video right */
+    width: 100%;
+  }
+  .text-box {
+    flex: 1; /* takes available space */
+    padding: 1rem;
+	font-size:100%;
+  }
+  .video-box {
+    flex: 1;
+  }
+  video {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* keep video from getting too tall */
+  }
