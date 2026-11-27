@@ -1,0 +1,205 @@
+/* Makes pages scroll smoothly back to top */
+html {
+    scroll-behavior: smooth !important;
+}
+
+/* Changes background color and makes website go to edge of window */
+body {
+    background-color: #F4E9D8;
+    margin: 0;
+}
+
+/* Controls Title Text */
+h1 {
+    background-color: white;
+    display: flex;
+    color: #A3412D;
+    font-family: verdana;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-radius: 1000px;
+    width: 100%;
+    margin: 20px 0;
+    box-sizing: border-box;;
+    box-shadow: 0 4px 6px rgba(163, 65, 45, 0.9);
+}
+
+/* Controls text used in paragraphs*/
+p {
+    color: #A3412D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin: 20px;
+}
+
+/* Aligns the image and paragraph */
+.headerContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Controls Subheading Titles */
+h2 {
+    color: #A3412D;
+    font-size: 1.5em;
+    font-family: verdana;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Controls menu appearance */
+#menu {
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    position: fixed;
+    left: -180px;
+    transition: left 0.3s ease; /*adds nice slide animation*/
+    background-color: orange;
+}
+
+/* When toggled, menu is slide to right */
+#menu.open {
+    left: 0;
+}
+
+/* Changes menu option colour when hovered over */
+#menu li:hover {
+    background-color: rgb(189, 127, 13);
+}
+
+/* Controls text in menu */
+#menu li a {
+    display: flex;
+    margin-left: 15px;
+    padding: 10px 18px;
+    align-items: center;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/* Contains bars for menu button */
+.container {
+    display: inline-block;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    transition: left 0.3s ease;
+}
+
+/* Slides menu button to right */
+.container.change {
+    left: 190px;
+}
+
+/* Defines appearance of menu bar element */
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+/* Rotates a bar -45 degrees when toggled*/
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Hides the center bar when toggled */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotates a bar 45 degrees when toggled */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Controls appearance of footer */
+footer {
+    background-color: #F4E9D8;
+    color: #F4E9D8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 3px solid #A3412D;
+}
+
+/* Controls appearance of intro text */
+.intro {
+    flex: 1;
+    min-width: 250px;
+    height: auto;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+/* Controls appearance of intro image */
+.picture {
+    position: relative;
+    flex: 1;
+    right: 25px;
+    border-radius: 45px;
+}
+
+/* Controls box around each landmark and image */
+.landmarkContent {
+    display: flex;
+    margin: 30px;
+}
+
+/* Control landmark section */
+.landmarks {
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(163, 65, 45, 0.9);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Control landmark text */
+.landmarkText {
+    font-size: 20px;
+    flex: 1;
+}
+
+/* Sets size of images and video in landmark section */
+video, .landmarkImage {
+    width: 50%;
+    height: 300px;
+    max-width: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+/* Sets size of images accompanying sound */
+.soundImage {
+    position: relative;
+    display: block;
+    z-index: 1;
+    top: 0;
+    object-fit: cover;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Sets position of sound bars */
+.sound {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

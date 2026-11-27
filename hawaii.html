@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="hawaii.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--allows for responsive design-->
+    </head>
+
+    <script>
+        function myFunction(x) { <!--function triggered by pressing menu icon-->
+            x.classList.toggle("change"); <!--toggles menu button state to x icon or vice versa-->
+            document.getElementById("menu").classList.toggle("open"); <!--toggles menu bar-->
+        }
+    </script>
+
+    <body>
+        <title>Hawaii! &#x1F334</title> <!--adds title and emoji-->
+        <div class="container" onclick="myFunction(this)"> <!--adds menu button and a function call if pressed-->
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul id="menu"> <!--adds a navigation bar-->
+            <li><a>Home</a></li>
+            <li><a>New York</a></li>
+            <li><a>Hawaii</a></li>
+            <li><a>Texas</a></li>
+            <li><a href="FinalFloridaPage - Copy.HTML">Florida</a></li>
+        </ul>
+        <h1>Hawaii Travel Guide &#x1F334</h1> <!--page title-->
+        <div class="headerContent">
+        <p class="intro">Hawaii is a tropical paradise made up of eight beautiful islands, each with their own unique charm and breathtaking scenery.
+        Hawaii, being surrounded by the Pacific Ocean, is a perfect holiday destination for anyone looking to enjoy stunning beaches or experience outdoor adventures. 
+        From surfing the waves along the coastline or discovering hidden waterfalls, there is no shortage of exciting activities to enjoy. 
+        The islands are rich in culture and natural beauty, and some of the most diverse ecosystems in the world. 
+        With its warm climate, welcoming atmosphere and endless opportunities for adventure, Hawaii truly is a destination like no other.</p>
+        <img src="HawaiiBeach.webp" class="picture" alt="Hawaii Coastline">
+        </div>
+        <section class="landmarks">
+            <h2>Landmarks</h2>
+            <div class="landmarkContent">
+                <p class="landmarkText">Diamond Head is a famous volcanic crater located on the island of Oahu. 
+                    It is a popular attraction because visitors can hike to the top and enjoy amazing views of the ocean and Honolulu. 
+                    It is a great place for sightseeing, taking photographs and exploring Hawaii's natural beauty.</p>
+                <video width="50px" autoplay muted alt="Drone footage of Diamond Head"><source src="diamondhead.mp4"></video> <!--adds muted autoplay video-->
+            </div>
+            <div class="landmarkContent">
+                <img src="LanikaiBeach.jpg" class="landmarkImage" alt="Lanikai Beach"> <!--adds beach picture-->
+                <p class="landmarkText">Lanikai Beach is a beautiful beach located on the island of Oahu in Hawaii. 
+                    It is famous for its soft white sand, clear turquoise water and stunning views of the nearby Mokulua Islands. 
+                    Visitors can enjoy swimming, kayaking, snorkelling and relaxing in the sunshine. 
+                    It is a perfect place to unwind, take photographs and experience Hawaii's beautiful tropical scenery.</p>
+            </div>
+            <div class="landmarkContent">
+                <p class="landmarkText">Pearl Harbour is a famous historic site located on the island of Oahu in Hawaii. 
+                    It is best known for the 1941 attack that brought the United States into World War II. 
+                    Visitors can explore the museums, memorials and the USS Arizona Memorial to learn about this important event in history. 
+                    It is a great place for sightseeing, learning about the past and paying tribute to those who lost their lives.</p>
+                <img src="Pearl Harbour.avif" class="landmarkImage" alt="Pearl Harbour"> <!--adds pearl harbour picture-->
+            </div>
+        </section>
+        <div>
+            <img src="UkuleleSound.png" class="soundImage" style="margin-bottom: -100px;" alt="Ukulele Image"> <!--adds ukulele image with. margin -100 so sound bar is a little bit closer-->
+            <audio controls class="sound">
+                <source src="UkuleleMP3.mp3"> <!--adds mp3 sound recording-->
+                </audio>
+            <img src="HawaiiSound.png" class="soundImage" style="margin-top: 20px; margin-bottom: 30px;" alt="Hawaii Beach Image">
+            <audio controls class="sound">
+                <source src="NatureMP3.mp3">
+            </audio>
+        </div>
+        <footer> <!--adds footer-->
+            <h2 style="margin-bottom: -15px;">Hawaii Travel Guide</h2>
+            <p style="text-align: center;">Explore, relax and enjoy the beauty of Hawaii.</p>
+            <p style="text-align: center;"><a href="#top">Back to Top | </a><a href="https://www.gohawaii.com">Official Hawaii Tourism</a></p> <!--adds a link for a smooth scroll back up to top and a link to another website-->
+        </footer>
+    </body>
+</html>
